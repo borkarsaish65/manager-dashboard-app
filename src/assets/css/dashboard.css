@@ -1,0 +1,204 @@
+body {
+    background-color: #f9f9f9;
+}
+.main-container {
+    margin:25px;
+    display: flex;
+}
+.stats-container {
+width: 85%;
+margin:10px;
+}
+.stats-container .tile-stats-container {
+display: flex;
+justify-content: space-between;
+
+}
+.graph-stats-container {
+    display: flex;
+    margin:20px 0;
+    justify-content: space-between;
+}
+.graph-stats-container .line-graph{
+    width: 55%;
+}
+
+.graph-stats-container .pie-chart{
+    width: 35%;
+}
+.pie-chart .chart-container{
+    max-width: 300px;
+    margin:0 auto;
+}
+.graph-stats-container .line-graph,
+.graph-stats-container .pie-chart{
+    background-color: #ffffff;
+    max-height: 500px;
+    -webkit-box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+}
+.chart-container{
+    position: relative;
+}
+.chart-container .chart-text-container{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left:70px;
+    top:90px;
+}
+.chart-text-container div{
+    font-size: 20px;
+}
+.chart-text-container div:nth-child(1){
+    font-size: 30px;
+}
+
+.mood-container {
+    width: 15%;
+    background-color: #ffffff;
+    padding:10px;
+}
+.budget-cta-container{
+
+}
+.budget-cta-container .budget-heading{
+    display: inline-block;
+}
+.budget-cta-container .budget-heading{
+    margin-right: 10px;
+}
+.btn {
+    display: inline-block;
+    padding:0.375rem 0.75rem;
+    border: none;
+    margin: 0 0.375rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn.btn-primary-green{
+background-color: #008075;
+color:white;
+}
+.btn.btn-outline-green{
+   color: #008075;
+   background-color:white; 
+   border:1px solid #008075;
+}
+.budget-notification {
+    margin:25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-container {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid-item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.grid-item1,.grid-item2{
+    background-color: #ffffff;
+    -webkit-box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+}
+.grid-team-mood-item {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start:6 
+}
+.mood-container-new {
+    background-color: #ffffff;
+    padding:10px;
+    -webkit-box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+ 
+    .new-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 1fr 1fr 1fr;
+    }
+    .new-container > div {
+
+    }
+    .grid-item1{
+        grid-column-start:auto;
+        grid-column-end:auto;
+    }
+    .grid-item2{   
+        grid-column-start:auto;
+        grid-column-end:auto;
+    }
+    .grid-team-mood-item {
+        grid-row-start:auto;
+        grid-row-end:auto;
+        grid-column-start:auto 
+    }
+    .budget-notification{
+        display: none;
+    }
+ }
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+
+
+    .new-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 150px 1fr 1fr;
+    }
+    .new-container > div {
+        width:200px;
+    }
+    .new-container > div:last-child {
+        grid-row-start:auto;
+        grid-row-end:auto;
+        grid-column-start:auto 
+    }
+    .grid-item1{
+        grid-column-start:auto;
+        grid-column-end:auto;
+    }
+    .grid-item2{   
+        grid-column-start:auto;
+        grid-column-end:auto;
+    }
+    .grid-team-mood-item {
+        grid-row-start:auto;
+        grid-row-end:auto;
+        grid-column-start:auto 
+    }
+    .budget-notification{
+        display: none;
+    }
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+
+ }
+
+@media only screen and (min-width: 992px){ 
+
+ }

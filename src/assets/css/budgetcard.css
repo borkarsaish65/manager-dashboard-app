@@ -1,0 +1,31 @@
+.budget-card {
+    background-color: #ffffff;
+    width: 23%;
+    border-radius: 10px;
+    padding:10px;
+    -webkit-box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 18px -7px rgba(0,0,0,0.75);
+}
+
+.indicator-container .hours-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.project-info {
+    display: flex;
+    justify-content: space-between;
+}
+.project-info h2{
+    margin:0;
+}
+ .budget-info {
+    margin:10px 0;
+} 
+.budget-info .budget-data{
+display:flex;
+justify-content: space-between;
+width:50%;
+
+} 

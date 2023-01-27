@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    color:white;
+    background-color:#2f354a;
+}
+
+.navbar .navbar-listing ul{
+    list-style: none;
+
+}
+.navbar .navbar-listing li{
+    float: left;
+    margin:0 10px;
+}
+.navbar .navbar-listing .active{
+    border-bottom: 3px solid #21d6c9;
+}
+.navbar .profile-section {
+
+}
+.navbar-listing{
+    width: 60%;
+}
+.branding{
+    display: flex;
+    justify-content: center;
+}
+.branding,
+.profile-section {
+    width: 20%;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-name {
+    font-size: 15px;
+}
